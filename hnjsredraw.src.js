@@ -16,6 +16,7 @@ function openDiscussion( url ){
         var main_table = $($('iframe')[0].contentDocument.getElementsByTagName('body')).children('center').children('table:first');
         main_table.attr('width' , '100%' );
         main_table.children('tbody').children('tr:first,tr:last').remove();
+        window.scrollTo(0,0);
     });
 }
 function redraw(){
